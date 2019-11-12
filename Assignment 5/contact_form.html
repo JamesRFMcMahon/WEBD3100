@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>James McMahon Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="formContent">
+        <div class="row">
+            <div class="column" id="col1">
+                <header>
+                    <h1>Contact</h1>
+                    <h3>want to get in touch?</h3>
+                </header>
+                <hr id="horLine">
+                <img src="Images/James.jpg" alt="James McMahon" title="That's me!">
+                <h2 class="hWithMargin" id="JamesName">James McMahon</h2>
+                <h4 class="hWithMargin" id="JamesPhone"><a href="tel:1-902-210-8615">+1(902)210-8615</a></h4>
+                <h4 class="hWithMargin" id="JamesEmail"><a href="mailto:James.RFMcMahon@hotmail.com">James.RFMcMahon@hotmail.com</a>
+                </h4>
+            </div> <!-- end col1 -->
+
+            <div class="column" id="col2">
+                <div class="container">
+                    <form>
+                        <h2 id="col2H">Send me a message!<span id="reqText">(<span class="redText">*</span>required)</span></h2>
+                        <h3>Your Full Name:</h3>
+                        <label>First Name<span class="redText">*</span>:</label>
+                        <input name="firstName" type="text">
+                        <label id="lNameLbl">Last Name<span class="redText">*</span>:</label>
+                        <input name="lastName" type="text">
+
+                        <h3>Your Contact Information:</h3>
+                        <label>Email<span class="redText">*</span>:</label>
+                        <input name="email" type="text">
+                        <label id="phoneLbl">Phone #:</label>
+                        <input name="phone" type="text">
+                        <br>
+                        <label>Preferred method of contact:</label>
+                        <br>
+                        <select id="prefContactCbo">
+                            <option value="" disabled selected>Select</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                            <option value="other">Other (please specify in comments)</option>
+                        </select>
+
+                        <h3 id="messageH">Message:</h3>
+                        <label>Reason for contact:</label>
+                        <div class="radioList">
+                            <input type="radio" name="contactReason" value="workInquiry"> Work Inquiry<br>
+                            <input type="radio" name="contactReason" value="personalInquiry"> Personal Inquiry<br>
+                            <input type="radio" name="contactReason" value="other"> Other (please specify in comments)
+                        </div>
+                        <br>
+                        <label>Additional Comments/Questions:</label>
+                        <br>
+                        <textarea></textarea>
+                        <button id="submitBtn">Submit</button>
+                    </form>
+                </div>
+            </div> <!-- end col2 -->
+        </div> <!-- end row -->
+    </div> <!-- end formContent -->
+</body>
+
+</html>
